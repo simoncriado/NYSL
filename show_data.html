@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Feedback Sent</title>
+  <link rel="stylesheet" href="styles/nysl_4.css">
+  <link href="https://fonts.googleapis.com/css?family=Neucha" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+
+<body>
+  <header>
+    <img class="logo" src="Images/nysl_logo.png" alt="Logo">
+    <h1 class="title">Northside Youth Soccer League</h1>
+  </header>
+  <h2 class="subtitle">HOME</h2>
+  <main>
+    <div id="mySidenav" class="sidenav">
+      <a class="active" href="home_3.html" id="home"> <span>Home</span> <i class="fas fa-home"></i></a>
+      <a href="about_3.html" id="about"> <span>About</span> <i class="fas fa-info-circle"></i></a>
+      <a href="rules.html" id="rules"> <span>Rules</span> <i class="fas fa-gavel"></i></a>
+      <a href="game_info.html" id="game_info"> <span>Dates</span> <i class="far fa-clock"></i> </a>
+      <a href="registration.html" id="registration_form"> <span>Form</span> <i class="far fa-edit"></i></a>
+      <a href="contact_3.html" id="contact"> <span>Contact</span> <i class="fas fa-at"></i></a>
+    </div>
+    <div class="container">
+      <p align=center>&nbsp;</p>
+      <h1 align=center>
+        <font size="+1">The following information has been sent as your
+          feedback:</font>
+      </h1>
+
+      <table class="submit" border="1" align=center width="226">
+        <tr>
+          <th align="center">Form Field</th>
+          <th align="center">Field Value</th>
+        </tr>
+
+        <script language="javascript">
+          var args = location.search.substr(1).split('&');
+          for (var i = 0; i < args.length; ++i) {
+            var parts = args[i].split('=');
+            if (parts != null) {
+              var field = parts[0];
+              var value = parts[1];
+              if (value == null) {
+                value = "null"
+              }
+              else {
+                value = '"' + unescape(value.replace(/\+/g, ' ')) + '"';
+              }
+
+              document.writeln('<tr><td align="center">' + field + '</td>');
+              document.writeln('<td align="center">' + value + '</td></tr>');
+            }
+          }
+        </script>
+
+        <noscript>
+          <tr>
+            <td>
+              <p>You need to turn on Javascript in your browser.</p>
+
+              <p>In Microsoft Internet Explorer 4 or greater:</p>
+              <ul>
+                <li>From the "Tools" menu (in IE 4, it's the "View" menu), select "Internet Options".</li>
+                <li>Click on the "Security" tab.</li>
+                <li>Click on the "Custom Level" button. (In IE 4, select "Custom"
+                  and then click on "Settings...".)</li>
+                <li>Under "Active scripting" make sure "Enable" is selected.</li>
+              </ul>
+
+              <p>In Netscape version 4 or greater:</p>
+              <ul>
+                <li>From the <b>Edit</b> menu, select <b>Preferences</b>.</li>
+                <li>In the <b>Category</b> list on the left, click on the word "Advanced".</li>
+                <li>In the panel on the right, make sure "Enable JavaScript" is checked.</li>
+                <li>Click the <b>OK</b> button.</li>
+              </ul>
+
+            </td>
+          </tr>
+        </noscript>
+
+      </table>
+    </div>
+  </main>
+</body>
+
+</html>

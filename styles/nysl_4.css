@@ -1,0 +1,286 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Neucha', cursive;
+}
+/* ****** BODY ****** */
+body {
+    background-color: black;
+    color: white;
+    margin-bottom: 100px;
+    font-size: 20px;
+}
+/* ****** HEADER ****** */
+header {
+    background-image: url("/module_1/images/Updated-Banner-Photo.jpeg");
+    background-repeat: no-repeat;
+    background-position-y: 60px;
+    background-size: 100%;
+    height: 450px;
+}
+.logo {
+    position: absolute;
+    right: 91%;
+    top: 20px;
+    width: 75px;
+    z-index: +1;
+}
+.title {
+    width: 25%;
+    padding-top: 100px;
+    padding-left: 60px;
+    font-size: 76px;
+    color: rgb(0, 0, 0);
+}
+.subtitle {
+    text-align: center;
+    background-color: white;
+    color: black;
+    border-top-style: solid;
+    border-color: black;
+    font-size: 50px;
+    padding: 10px;
+    padding-bottom: 5px;
+}
+/* ****** NAVBAR ****** */
+#mySidenav a {
+    background-color: white;
+    position: absolute;
+    left: -100px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 120px;
+    text-decoration: none;
+    color: black;
+    text-align: right;
+    border-radius: 0 5px 5px 0;
+}
+#mySidenav a:hover {
+    left: 0px;
+}
+#mySidenav .active {
+    left: 0px;
+}
+span {
+    padding-right: 35px;
+}
+#home {
+    top: 530px;
+}
+#about {
+    top: 590px;
+}
+#rules {
+    top: 650px;
+}
+#game_info {
+    top: 710px;
+}
+#registration_form {
+    top: 770px;
+}
+#contact {
+    top: 830px;
+}
+/* ****** IMAGE ****** */
+.image1 {
+    padding-top: 40px;
+    display: inline-block;
+}
+.image1 img {
+    border-radius: 5px 5px 5px 5px;
+}
+/* ****** TEXT ****** */
+.container {
+    width: 1000px;
+    margin: auto;
+}
+.text {
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 50px;
+    padding-top: 40px;
+    height: 190px;
+    width: 50%;
+}
+.dates {
+    margin-top: 20px;
+}
+.p1 {
+    margin-top: 10px;
+}
+.text p {
+    padding-left: 20px;
+    padding-top: 5px;
+}
+.p1 p a {
+    color: rgb(0, 218, 65);
+}
+/* ****** LIST *******/
+.rules {
+    padding-top: 40px;
+    display: inline-block;
+}
+ul {
+    list-style-type: square;
+}
+ol > li > ol > li{
+    list-style: lower-alpha;
+}
+.h2 {
+    text-align: center;
+    padding-bottom: 50px;
+}
+.h2 p {
+    padding-top: 30px;
+}
+.fifa > li {
+    padding-bottom: 20px;
+}
+li span {
+    font-weight: bold;
+    padding-right: 0px;
+}
+ol, ul {
+    padding-left: 50px;
+}
+h3 {
+    padding-top: 20px;
+}
+/* ****** TABLE ****** */
+.logo2 {
+    position: absolute;
+    right: 50%;
+    top: 540px;
+    width: 75px;
+    z-index: +10;
+}
+.game_info {
+    text-align: center;
+    padding-top: 105px;
+}
+.caption {
+    padding-bottom: 20px;
+}
+thead {
+    text-decoration: underline;
+}
+.mytable {
+    padding-right: 180px;
+    padding-top: 40px;
+    display: inline-block;
+}
+.mytable2{
+    padding-top: 40px;
+    display: inline-block;
+    vertical-align: top;
+}
+th,td {
+    vertical-align: top;
+    padding-right: 10px;
+}
+/* ****** MAPS ****** */
+div h2 {
+    padding-top: 40px;
+}
+.maps {
+    display:inline-block;
+    width: 220px;
+    padding-right: 180px;
+}
+.maps2 {
+    display:inline-block;
+    width: 310px;
+}
+.foot {
+    width: 700px;
+    padding-top: 30px;
+}
+.foot span {
+    font-weight: bold;
+    padding-right: 0px;
+}
+.last {
+    display: inline-block;
+    padding-right: 50px;
+}
+/* ****** FORM ****** */
+form h2 {
+    text-align: center;
+    padding-bottom: 20px;
+    padding-left: 0px;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+}
+.name, .adress, .city, .birthdate, .parent, .phone, .signature {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+.name div, .city div, .birthdate div, .parent div, .phone div, .signature div {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+}
+input {
+    flex-grow: 1;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+.school {
+    display: flex;
+    flex-direction: row;
+}
+.school h3 {
+    margin-right: 5px;
+}
+.position>div:last-child {
+    display: flex;
+    flex-direction: row;
+}
+.position>div:last-child>div {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+.option1 {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+}
+select {
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+.form h3 {
+    padding-top: 0px;
+}
+.position, .signature {
+    margin-top: 20px;
+}
+.size {
+    display: flex;
+    flex-direction: row;
+    
+}
+.radio {
+    display: flex;
+    flex-direction: column;
+}
+.form h4 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+.submit {
+    text-align: center;
+    margin: auto;
+}
+.submit input {
+    margin-top: 20px;
+}
